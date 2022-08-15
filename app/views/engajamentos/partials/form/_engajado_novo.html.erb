@@ -7,20 +7,20 @@
 
 	<div class="p-2">
 		<%= form.label 'nome', class: "block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" %>
-		<%= form.text_field :nome, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", placeholder: "Nome completo", value: Faker::Name.name_with_middle %>
+		<%= form.text_field :nome, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", placeholder: "Nome completo" %>
 	</div>
 	<div class="p-2">
 		<%= form.label :mae, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" %>
-		<%= form.text_field :mae, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", placeholder: "Nome completo da mãe", value: Faker::Name.name_with_middle %>
+		<%= form.text_field :mae, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", placeholder: "Nome completo da mãe" %>
 	</div>
 	<div class="grid grid-cols-4">
 		<div class="p-2 col-span-2">
 			<%= form.label :cpf, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" %>
-			<%= form.text_field :cpf, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", placeholder: "99999999999", pattern:"[0-9]{11}", value: CPF.generate %>
+			<%= form.text_field :cpf, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", placeholder: "99999999999", pattern:"[0-9]{11}" %>
 		</div>
 		<div class="p-2 col-span-2">
 			<%= form.label :nascimento, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" %>
-			<%= form.date_field :nascimento, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", value: Faker::Date.between(from: '1982-09-23', to: '2014-09-25') %>
+			<%= form.date_field :nascimento, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %>
 		</div>
 	</div>
 	<div class="p-2 border-b">
